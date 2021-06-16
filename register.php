@@ -87,7 +87,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
     <div class="m-5" style="display: flex; justify-content: center; align-items: center;">
 
-    <div class="wrapper">
+    <div class="wrapper shadow-lg p-3 mb-5 bg-body rounded mt-4 ">
         <h2>Sign Up</h2>
         <p>Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">

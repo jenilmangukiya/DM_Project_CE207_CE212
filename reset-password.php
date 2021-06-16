@@ -68,7 +68,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
     <div class="m-5" style="display: flex; justify-content: center; align-items: center;">
-        <div class="wrapper">
+        <div class="shadow-lg p-3 mb-5 bg-body rounded mt-4 ">
             <h2>Reset Password</h2>
             <p>Please fill out this form to reset your password.</p>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 

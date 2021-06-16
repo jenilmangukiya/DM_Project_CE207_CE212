@@ -79,9 +79,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
 
-    <div class="m-5" style="display: flex; justify-content: center; align-items: center;">
+    <div class="mt-5" style="display: flex; justify-content: center; align-items: center;">
         
-    <div class="wrapper">
+    <div class="wrapper shadow-lg p-3 mb-5 bg-body rounded mt-5">
 
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
