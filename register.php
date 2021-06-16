@@ -108,7 +108,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-secondary ml-2" value="Reset">
+                <button type="reset" class="btn btn-secondary ml-2">Reset</button>
             </div>
             <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>

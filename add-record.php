@@ -110,7 +110,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 
 							<label>Quantity</label>
 
-							<input type="number" name="qty" id="qty" class="form-control" placeholder="Enter Quantity" required>
+							<input type="number" min="1" name="qty" id="qty" class="form-control" placeholder="Enter Quantity" required>
 
 						</div>
 						
@@ -126,7 +126,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 
 							<label>Cost</label>
 
-							<input type="number" name="cost" id="cost" class="form-control" placeholder="Enter Total Cost" required>
+							<input type="number" min="1" name="cost" id="cost" class="form-control" placeholder="Enter Total Cost" required>
 
 						</div>
 

@@ -87,7 +87,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 						</div>
 						<div class="form-group">
 							<label>Quantity</span></label>
-							<input type="number" name="qty" id="qty" class="form-control" value="<?php echo $row[0]['qty']; ?>" placeholder="Enter Quantity" required>
+							<input type="number" name="qty" min="1" id="qty" class="form-control" value="<?php echo $row[0]['qty']; ?>" placeholder="Enter Quantity" required>
 						</div>
 						<div class="form-group">
 							<label>Detail</span></label>
@@ -95,7 +95,7 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 						</div>
 						<div class="form-group">
 							<label>Cost</span></label>
-							<input type="text" name="cost" id="cost" maxlength="12" class="form-control" value="<?php echo $row[0]['cost']; ?>" placeholder="Enter Total Cost" required>
+							<input type="text" min="1" name="cost" id="cost" maxlength="12" class="form-control" value="<?php echo $row[0]['cost']; ?>" placeholder="Enter Total Cost" required>
 						</div>
 						<div class="form-group">
 							<input type="hidden" name="editId" id="editId" value="<?php echo $_REQUEST['editId']?>">
