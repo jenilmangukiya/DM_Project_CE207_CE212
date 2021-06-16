@@ -18,6 +18,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -43,10 +45,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	// echo $userdata;
 
 	?>
-   	<div class="container">
-		</br>
-		<h1><center>Product Management</center></h1>
-		<div class="card">
+   	<div class="container my-3">
+		<h1 style="font-family: 'Raleway', sans-serif; text-align: center;">Product Management</h1> 
+		<div class="shadow-lg p-3 mb-5 bg-body rounded mt-4	">
 			<div class="card-header">
 			<i class="fa fa-fw fa-globe"></i> 
 			<strong>Browse Details</strong> 
@@ -169,57 +170,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 		</div>
 		
 	</div>
-	
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-	<script
-  src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
-  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
-  crossorigin="anonymous"></script>
-    <script>
-		$(document).ready(function() {
-			jQuery(function($){
-				  var input = $('[type=tel]')
-				  input.mobilePhoneNumber({allowPhoneWithoutPrefix: '+1'});
-				  input.bind('country.mobilePhoneNumber', function(e, country) {
-					$('.country').text(country || '')
-				  })
-			 });
-			 
-			var dateFormat	=	"yy-mm-dd";
-			fromDate	=	$(".fromDate").datepicker({
-				changeMonth: true,
-				dateFormat:'yy-mm-dd',
-				numberOfMonths:2
-			})
-			.on("change", function(){
-				toDate.datepicker("option", "minDate", getDate(this));
-			}),
-			toDate	=	$(".toDate").datepicker({
-				changeMonth: true,
-				dateFormat:'yy-mm-dd',
-				numberOfMonths:2
-			})
-			.on("change", function() {
-				fromDate.datepicker("option", "maxDate", getDate(this));
-			});
-			
-			
-			function getDate(element){
-				var date;
-				try{
-					date = $.datepicker.parseDate(dateFormat,element.value);
-				}catch(error){
-					date = null;
-				}
-				return date;
-			}
-			
-		});
-	</script>
 </body>
 </html>

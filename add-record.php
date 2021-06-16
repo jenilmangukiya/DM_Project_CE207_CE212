@@ -42,30 +42,10 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
 
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
-	<![endif]-->
-	<script>
-
-	  window.dataLayer = window.dataLayer || [];
-
-	  function gtag(){dataLayer.push(arguments);}
-
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-131906273-1');
-
-	</script>
-
 </head>
-
-
 
 <body>
 
-	
    	<div class="container">
 		</br>
 		<h1><center>Product Management</center></h1>
@@ -165,26 +145,6 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 		</div>
 
 	</div>
-	
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    
-	<script>
-		$(document).ready(function() {
-		jQuery(function($){
-			  var input = $('[type=tel]')
-			  input.mobilePhoneNumber({allowPhoneWithoutPrefix: '+1'});
-			  input.bind('country.mobilePhoneNumber', function(e, country) {
-				$('.country').text(country || '')
-			  })
-			 });
-		});
-	</script>
-
-    
 
 </body>
 

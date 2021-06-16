@@ -43,15 +43,16 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 	
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     
 </head>
 
 <body>
 	
-	<div class="bg-light border-bottom shadow-sm sticky-top">
 	</br>
    	<div class="container">
-		<h1><center>Product Management</center></h1>
+		<h1 style="font-family: 'Raleway', sans-serif; text-align: center;">Product Management</h1> 
 		<?php
 		if(isset($_REQUEST['msg']) and $_REQUEST['msg']=="ras"){
 			echo	'<div class="alert alert-success"><i class="fa fa-thumbs-up"></i> Record added successfully!</div>';
@@ -74,9 +75,11 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 							<label>Customer Name</span></label>
 							<input type="text" name="cname" id="cname" class="form-control" value="<?php echo $row[0]['cname']; ?>" placeholder="Enter Customer Name" required>
 						</div>
+
+
 						<div class="form-group">
 							<label>Phone Number</span></label>
-							<input type="number" name="cphone" id="cphone" maxlength="10" class="form-control" value="<?php echo $row[0]['cphone']; ?>" placeholder="Enter Phone Number" required>
+							<input type="tel"  x-autocompletetype="tel" class="tel form-control" pattern="^\d{10}$" title="Please Enter Valid Phone Number." name="cphone" id="cphone" maxlength="10" class="form-control" value="<?php echo $row[0]['cphone']; ?>" placeholder="Enter Phone Number" required>
 						</div>
 						<div class="form-group">
 							<label>Product Name</span></label>
@@ -104,9 +107,6 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 		</div>
 	</div>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    
+ 
 </body>
 </html>
