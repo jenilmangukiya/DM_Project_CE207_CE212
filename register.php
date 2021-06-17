@@ -58,7 +58,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $stmt->bindParam(":password", $param_password, PDO::PARAM_STR);
             
             $param_username = $username;
-            $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+            $param_password = password_hash($password, PASSWORD_DEFAULT); 
             
             if($stmt->execute()){
                 header("location: login.php");

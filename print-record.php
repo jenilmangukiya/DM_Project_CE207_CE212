@@ -40,7 +40,7 @@ $pdf->AliasNbPages();
 $pdf->SetFont('Arial','B',12);
 
 
-$heading=array('Date','Customer Name','Phone No','Product Name','Quantity','Details','Cost','Total Cost');
+$heading=array('Date','Customer Name','Phone','Product Name','Quantity','Details','Cost','Total Cost');
 
 $pdf->SetFont('Courier','B',13);
 foreach($heading as $val){

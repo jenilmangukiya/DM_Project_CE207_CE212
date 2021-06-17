@@ -41,9 +41,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 	$userData	=	$db->getAllRecords('users','*',$condition,'ORDER BY date DESC');
 
-	$userdata = json_encode($userData);
-	// echo $userdata;
-
 	?>
    	<div class="container my-3">
 		<h1 style="font-family: 'Raleway', sans-serif; text-align: center;">Product Management</h1> 

@@ -6,7 +6,6 @@ if(isset($_REQUEST['submit']) and $_REQUEST['submit']!=""){
 			$data	=	array(
 							'date'=>$date,
 							'cname'=>$cname,
-							'cname'=>$cname,
 							'cphone'=>$cphone,
 							'pname'=>$pname,
 							'qty'=>$qty,
