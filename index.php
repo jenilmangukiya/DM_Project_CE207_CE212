@@ -36,7 +36,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 		$condition	.=	' AND cphone LIKE "%'.$_REQUEST['cphone'].'%" ';
 	}
 	
-	//echo $condition;
+	 
 
 
 	$userData	=	$db->getAllRecords('users','*',$condition,'ORDER BY date DESC');
